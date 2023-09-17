@@ -27,3 +27,11 @@ def soluciones(n, fila=0, tablero=None):
             tablero[fila][columna] = 0
     return total
 
+# tabla para los resultados
+valores_n = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 15]
+print("n\tSoluciones")
+print("-" * 20)
+
+for n in valores_n:
+    resultado = soluciones(n)
+    print(f"{n}\t{resultado}")
