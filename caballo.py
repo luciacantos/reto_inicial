@@ -19,3 +19,13 @@ def contar_movimientos(n):
 n = 10
 resultado = contar_movimientos(n)
 print(f"La cantidad de movimientos posibles para {n} es {resultado}")
+
+valores_de_n = [1, 2, 3, 5, 8, 10, 15, 18, 21, 23, 32]
+
+# Crear una tabla para mostrar los resultados
+print("n\tPosibilidades válidas")
+print("-" * 24)
+
+for n in valores_de_n:
+    resultado = contar_movimientos(n)
+    print(f"{n}\t{resultado}")
